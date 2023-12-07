@@ -1,0 +1,19 @@
+
+.container {
+  background-color: beige;
+  padding: 20px;
+}
+
+.instruct {
+  margin-left: 5px;
+}
+.background{
+  background-color: beige;
+
+}
+.img-container{
+  text-align: center;
+}
+.text{
+  text-align: center
+}

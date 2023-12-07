@@ -1,0 +1,38 @@
+
+.background{
+  /* background: linear-gradient(135deg, rgba(34,193,195,1) 0%,     rgba(253,187,45,1) 100%); */
+  /* text-align: center; */
+  /* Trang chủ - Chỉnh màu cho các nút */
+.container{
+  padding-top: 20px; 
+  .row{
+    text-align: center;
+    .button {
+      background-color: rgb(255, 206, 127); /* Màu nền mặc định */
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #000; /* Màu chữ */
+    }
+    
+    /* Khi nút được hover */
+    .button:hover {
+      background-color: #ccc; /* Màu nền khi hover */
+    }
+    
+    /* Khi nút được active hoặc chọn */
+    .button:active,
+    .button:focus {
+      background-color: cadetblue; /* Màu nền khi active hoặc chọn */
+      color: #fff; /* Đổi màu chữ khi active hoặc chọn */
+    }
+  }
+  
+}
+
+}
+/* body {
+  background: linear-gradient(135deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+} */
