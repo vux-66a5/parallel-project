@@ -1,9 +1,11 @@
+path_name = "C:\\Users\\ADMIN\\Desktop\\parallel-project"
+
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle 
 import sys
-sys.path.insert(0, "C:\\Users\\ADMIN\\Desktop\\parallel-project")
+sys.path.insert(0, path_name)
 
 from main.utils.puma.puma_ho import puma_ho
 from src.APG import APG
@@ -16,8 +18,8 @@ from src.func.constraints.indicator import indicator
 
 # Load the background and object images
 group_num = 1
-bg_path = f'C:/Users/ADMIN/Documents/Tailieulienquandenhoc/Tinh_toan_song_song/Interface/patient-record-app/CCTV-phase-retrieval/data/experiment/E{group_num}/bg.bmp'
-obj_path = f'C:/Users/ADMIN/Documents/Tailieulienquandenhoc/Tinh_toan_song_song/Interface/patient-record-app/CCTV-phase-retrieval/data/experiment/E{group_num}/obj.bmp'
+bg_path = path_name + f'\\data\\experiment\\E{group_num}\\bg.bmp'
+obj_path = path_name + f'\\data\\experiment\\E{group_num}\\obj.bmp'
 
 img_bg = cv2.imread(bg_path, cv2.IMREAD_GRAYSCALE)  # Read and convert to grayscale
 img_bg = img_bg.astype(np.float64) / 255.0

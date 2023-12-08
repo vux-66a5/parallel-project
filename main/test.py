@@ -1,9 +1,11 @@
+path_name = "C:\\Users\\ADMIN\\Desktop\\parallel-project"
+
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle 
 import sys
-sys.path.insert(0, "C:\\Users\\ADMIN\\Desktop\\parallel-project")
+sys.path.insert(0, path_name)
 
 from main.utils.puma.puma_ho import puma_ho
 from src.APG import APG
@@ -38,10 +40,11 @@ def process_image():
     else:
         return jsonify({'error': 'Failed to fetch image from URL'})
 
-   # Load the background and object images
+   
+    # Load the background and object images
     group_num = 1
-    bg_path = f'C:/Users/ADMIN/Documents/Tailieulienquandenhoc/Tinh_toan_song_song/Interface/patient-record-app/CCTV-phase-retrieval/data/experiment/E{group_num}/bg.bmp'
-    obj_path = f'C:/Users/ADMIN/Documents/Tailieulienquandenhoc/Tinh_toan_song_song/Interface/patient-record-app/CCTV-phase-retrieval/data/experiment/E{group_num}/obj.bmp'
+    bg_path = path_name + f'\\data\\experiment\\E{group_num}\\bg.bmp'
+    obj_path = path_name + f'\\data\\experiment\\E{group_num}\\obj.bmp'
 
     img_bg = cv2.imread(bg_path, cv2.IMREAD_GRAYSCALE)  # Read and convert to grayscale
     img_bg = img_bg.astype(np.float64) / 255.0
@@ -49,16 +52,6 @@ def process_image():
     img_obj = cv2.imread(obj_path, cv2.IMREAD_GRAYSCALE)  # Read and convert to grayscale
     img_obj = img_obj.astype(np.float64) / 255.0
 
-    '''
-    # Load parameters from a .mat file
-    params_path = 'C:/Users/This Pc/Desktop/TTSS-cuoiky-master/data/experiment/E1/params.mat'
-    data = loadmat(params_path)
-    params = data['params']
-    pxsize = params[0][0]['pxsize'][0][0]
-    wavlen = params[0][0]['wavlen'][0][0]
-    dist = params[0][0]['dist'][0][0]
-    method = 'Angular Spectrum'
-    '''
 
     pxsize = 0.0059
     wavlen = 0.00066

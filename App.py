@@ -1,3 +1,5 @@
+path_name = "C:\\Users\\ADMIN\\Desktop\\parallel-project"
+
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from PIL import Image
 import cv2
@@ -13,7 +15,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 import sys
-sys.path.insert(0, "C:\\Users\\ADMIN\\Desktop\\parallel_project")
+sys.path.insert(0, path_name)
 
 from main.utils.puma.puma_ho import puma_ho
 from src.APG import APG
@@ -59,7 +61,7 @@ async def process_image(file: UploadFile = File(...)):
     os.makedirs(upload_folder, exist_ok=True)  # Tạo thư mục nếu nó chưa tồn tại
 
     # Tên file và đường dẫn để lưu ảnh đã xử lý
-    processed_img_filename = 'C:/Users/ADMIN/Desktop/parallel-project/uploads/processed_image.png'
+    processed_img_filename = path_name + f'\\uploads\\processed_image.png'
     processed_img_path = os.path.join(upload_folder, processed_img_filename)
 
     # Lưu ảnh đã xử lý
@@ -76,7 +78,7 @@ async def get_processed_image():
     # Xử lý logic để lấy đường dẫn đến ảnh đã xử lý (hoặc bạn có thể truy cập nó từ một biến đã lưu trữ)
 
     # Lấy đường dẫn của ảnh đã xử lý
-    processed_img_path = "C:/Users/ADMIN/Desktop/parallel-project/uploads/image.png"
+    processed_img_path =  path_name + f'\\uploads\\image.png'
 
     # Kiểm tra xem tệp có tồn tại không
     if not os.path.exists(processed_img_path):

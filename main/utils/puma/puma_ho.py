@@ -1,6 +1,8 @@
+path_name = "C:\\Users\\ADMIN\\Desktop\\parallel-project"
+
 import numpy as np
 import sys
-sys.path.insert(0, 'C:\\Users\\ADMIN\\Desktop\\parallel-project\\main\\utils\\puma')
+sys.path.insert(0,  path_name + '\\main\\utils\\puma')
 
 from energy_ho import energy_ho
 from mincut import mincut

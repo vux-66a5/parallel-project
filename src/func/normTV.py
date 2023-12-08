@@ -1,16 +1,8 @@
-# import sys 
-# sys.path.insert(0, '"C:\\Users\\This Pc\\Desktop\\parallel-project\\src\\func"')
-import sys
-import os
+path_name = "C:\\Users\\ADMIN\\Desktop\\parallel-project"
 
-# Lấy đường dẫn của file hiện tại
-current_dir = os.path.dirname(os.path.abspath(__file__))
+import sys 
+sys.path.insert(0,  path_name + f'\\src\\func')
 
-# Xác định đường dẫn tương đối đến thư mục chứa module của bạn
-module_dir = os.path.join(current_dir, '..')
-
-# Thêm đường dẫn tương đối vào sys.path để Python có thể tìm thấy module của bạn
-sys.path.insert(0, module_dir)
 from D import D
 import numpy as np
 

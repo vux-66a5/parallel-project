@@ -1,9 +1,11 @@
+path_name = "C:\\Users\\ADMIN\\Desktop\\parallel-project"
+
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 
 import sys
-sys.path.insert(0, "C:\\Users\\ADMIN\\Desktop\\parallel_project")
+sys.path.insert(0, path_name)
 
 from main.utils.puma.puma_ho import puma_ho
 from src.APG import APG
@@ -14,7 +16,7 @@ from main.utils.propagate import propagate
 
 # Load test image
 n = 256
-img = cv2.resize(cv2.imread('C:/Users/ADMIN/Desktop/parallel-project/uploads/processed_image.png', cv2.IMREAD_GRAYSCALE).astype(np.float64) / 255.0, (n, n))
+img = cv2.resize(cv2.imread(path_name + f'\\uploads\\processed_image.png', cv2.IMREAD_GRAYSCALE).astype(np.float64) / 255.0, (n, n))
 
 
 # Sample 
