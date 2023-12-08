@@ -1,7 +1,7 @@
 # Practical single-shot quantitative phase imaging with in-line holography
 _______
 <p align="left">
-<img src="docs/diagram.png">
+<img src="diagram.png">
 </p>
 
 <p align="left"> <strong>Figure 1</strong>. Overview of the proposed method. (a) Schematic of the in-line holographic imaging system. (b) Captured raw hologram of a transparent Fresnel zone plate. Scale bar 1 mm. (c) Retrieved phase distribution. (d) Rendered surface height profile.</p>
