@@ -2,7 +2,7 @@ path_name = "C:\\Users\\ADMIN\\Desktop\\parallel-project"
 
 import numpy as np
 import sys
-sys.path.insert(0, path_name '\\main\\utils\\puma')
+sys.path.insert(0, path_name + '\\main\\utils\\puma')
 
 from clique_energy_ho import clique_energy_ho
 

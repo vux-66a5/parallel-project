@@ -4,7 +4,7 @@ import numpy as np
 import sys
 
 sys.path.insert(0, path_name + '\\main\\utils\\puma')
-from puma_ho import puma_ho
+from puma.puma_ho import puma_ho
 
 def relative_error_2d(x_es,x_gt,region):
 
