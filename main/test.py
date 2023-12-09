@@ -1,5 +1,4 @@
-path_name = "C:\\Users\\ADMIN\\Desktop\\parallel-project"
-
+path_name = "C:\\Users\\vuxxw\\PycharmProjects\\Group16\\parallel-project"
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt

@@ -1,4 +1,4 @@
-path_name = "C:\\Users\\ADMIN\\Desktop\\parallel-project"
+path_name = "C:\\Users\\vuxxw\\PycharmProjects\\Group16\\parallel-project"
 
 import sys 
 sys.path.insert(0, path_name + f'\\src\\func')

@@ -1,4 +1,4 @@
-path_name = "C:\\Users\\ADMIN\\Desktop\\parallel-project"
+path_name = "C:\\Users\\vuxxw\\PycharmProjects\\Group16\\parallel-project"
 
 import numpy as np
 import cv2
@@ -16,7 +16,7 @@ from main.utils.propagate import propagate
 
 # Load test image
 n = 256
-img = cv2.resize(cv2.imread( path_name + f'\\data\\simulation\\cameraman.bmp', cv2.IMREAD_GRAYSCALE).astype(np.float64) / 255.0, (n, n))
+img = cv2.resize(cv2.imread(path_name + f'\\data\\simulation\\cameraman.bmp', cv2.IMREAD_GRAYSCALE).astype(np.float64) / 255.0, (n, n))
 
 
 # Sample 
@@ -26,7 +26,7 @@ x = np.exp(1j * np.pi * img)
 pxsize = 5e-3;                  # pixel size (mm)
 wavlen = 0.5e-3                 # wavelength (mm)
 method = 'Angular Spectrum'     # numerical method
-dist   = 5                      # imaging distance (mm)
+dist = 5                      # imaging distance (mm)
 
 # Forward model
 # Forward Propagation
